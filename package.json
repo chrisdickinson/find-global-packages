@@ -1,6 +1,6 @@
 {
   "name": "find-global-packages",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "find all global packages, list them by directory",
   "main": "index.js",
   "scripts": {
