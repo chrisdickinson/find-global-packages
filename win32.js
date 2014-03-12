@@ -1,6 +1,6 @@
 module.exports = win32
 
-var exec = require('child_process')
+var exec = require('child_process').exec
   , path = require('path')
   , fs = require('fs')
 
