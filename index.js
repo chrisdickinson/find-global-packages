@@ -6,7 +6,12 @@ var which = require('which')
   , path = require('path')
   , fs = require('fs')
 
-function resolveGlobals(ready) {
+function resolveGlobals(root, ready) {
+  if(ready) {
+    return onrootpath(null, root)
+  }
+  
+  ready = root
   which('npm', onnpmpath)
     
   function onnpmpath(err, dir) {
